@@ -13,7 +13,7 @@ import { colors, sizes } from "../index";
 
 // Focuses on generics and groups of basic or generalized implementation without being too specific about concepts that aren't created yet
 const globalTheme: DefaultTheme = {
-  // Used for standardizing the appearance of how things should appear like they are "elevating" of of the page but this would also include elevation changes for interactive states as well
+  // Used for standardizing the appearance of how things should appear like they are "elevating" of of the page but this would also include elevation changes for interactive states as well...box shadows
   elevation: {
     0: "placeholder value", // Use for: Flat Object (to reset or override elevation/box shadow need be)
     1: "placeholder value", // Use for: Panels, Cards Subtle
@@ -97,54 +97,52 @@ const globalTheme: DefaultTheme = {
   // Typography is the root here cause it explicity state that you're trying to apply styles to the appearance of text and text alone. It's broken out by attribute instead of by element because all of the HTML elements DON'T have different font styling attributes. This also abstracts away the semantic/markup decisions being made by the theme vs upon component implementation i.e. all weights are the same for headings and body copy. Organized for ways that aid with intellisense/autofill so if you're trying to apply a property to text element you type typography, then you get suggested a font styled property like color, font-size, font-weight, line-height, letter-spacing, etc. From there you look for the type or group of text that you're style should fit within if applicable, like display, heading, body, etc. From there you should then see what options are available from the established UX Design System found in Figma .
   typography: {
     // Sizes as stand alone cause not all HTML elements have different font styling attributes. i.e. all weights are the same for headings and body copy
-    fontSize: {
-      h1: {
+    h1: {
+      fontSize: "placeholder value",
+      lineHeight: "placeholder value",
+    },
+    h2: {
+      fontSize: "placeholder value",
+      lineHeight: "placeholder value",
+    },
+    h3: {
+      fontSize: "placeholder value",
+      lineHeight: "placeholder value",
+    },
+    h4: {
+      fontSize: "placeholder value",
+      lineHeight: "placeholder value",
+    },
+    h5: {
+      fontSize: "placeholder value",
+      lineHeight: "placeholder value",
+    },
+    // This is from Figma and extends past a h1 so idk what to do here
+    display: {
+      md: {
+        fontSize: "placeholder value",
+        lineHeight: "placeholder value",
+        letterSpacing: "placeholder value",
+      },
+      lg: {
+        fontSize: "placeholder value",
+        lineHeight: "placeholder value",
+        letterSpacing: "placeholder value",
+      },
+    },
+    // This is from Figma but idk if we'll get the same arguments here for the headings as in theory this should be a p tag but its usage and semantics sound be out of sync cause body copy could be used in various places like a span tag, small tag, label tag, caption tag, dt, dd tag, table elements, etc.
+    body: {
+      sm: {
         fontSize: "placeholder value",
         lineHeight: "placeholder value",
       },
-      h2: {
+      md: {
         fontSize: "placeholder value",
         lineHeight: "placeholder value",
       },
-      h3: {
+      lg: {
         fontSize: "placeholder value",
         lineHeight: "placeholder value",
-      },
-      h4: {
-        fontSize: "placeholder value",
-        lineHeight: "placeholder value",
-      },
-      h5: {
-        fontSize: "placeholder value",
-        lineHeight: "placeholder value",
-      },
-      // This is from Figma and extends past a h1 so idk what to do here
-      display: {
-        md: {
-          fontSize: "placeholder value",
-          lineHeight: "placeholder value",
-          letterSpacing: "placeholder value",
-        },
-        lg: {
-          fontSize: "placeholder value",
-          lineHeight: "placeholder value",
-          letterSpacing: "placeholder value",
-        },
-      },
-      // This is from Figma but idk if we'll get the same arguments here for the headings as in theory this should be a p tag but its usage and semantics sound be out of sync cause body copy could be used in various places like a span tag, small tag, label tag, caption tag, dt, dd tag, table elements, etc.
-      body: {
-        sm: {
-          fontSize: "placeholder value",
-          lineHeight: "placeholder value",
-        },
-        md: {
-          fontSize: "placeholder value",
-          lineHeight: "placeholder value",
-        },
-        lg: {
-          fontSize: "placeholder value",
-          lineHeight: "placeholder value",
-        },
       },
     },
   },
