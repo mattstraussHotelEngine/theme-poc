@@ -1,30 +1,18 @@
-Example references:
-https://next.material-ui.com/customization/default-theme/
-https://chakra-ui.com/docs/theming/theme
-https://material.io/design/material-theming/overview.html#using-material-theming
+// Example references:
+// https://next.material-ui.com/customization/default-theme/
+// https://chakra-ui.com/docs/theming/theme
+// https://material.io/design/material-theming/overview.html#using-material-theming
+// Suggested Guidelines:
+// - When creating sizes that have numerical values that are not on a incremental scale (2, 4, 6, 8, 10, 12 = increments of 2) use t-shirt starting at xs and ending at xl while anything passed that should be a multiplication of the smallest size (xs). For example is the xs sizes is 2 pixels and xl is 16 pixels, once you need more sizes and say theres a sizes that is 48 pixels being represented in the design it would be the 48 pixels divided by the 2 pixels and would give you the labels as x24 or 24 times the smallest size.
+// - When dealing with values represented as a scale in Figma, like increments of 100, use a numbered scale to replicate the ideas in the design.
+// - Try to match the verbiage as it is found in Figma to help maintain a consistent dialogue between all parties
+// - TBD
 
 import { DefaultTheme } from "styled-components";
 import { colors, sizes } from "../index";
 
 // Focuses on generics and groups of basic or generalized implementation without being too specific about concepts that aren't created yet
 const globalTheme: DefaultTheme = {
-  // TBD if this concepts is a good one but im leaning towards no because this goes against the concept i tried to apply to the pallettes object
-  borders: {
-    color: {
-      container: colors.colorName,
-      input: colors.colorName,
-      button: colors.colorName,
-      active: colors.colorName,
-      containerInverted: colors.colorName,
-      inputInverted: colors.colorName,
-      buttonInverted: colors.colorName,
-      activeInverted: colors.colorName,
-    },
-    // Used to define variant border widths (probably remove this for now)
-    size: {},
-    // Used to define variant border styles like dashed, solid, dotted, inset, outset, etc (probably remove this for now)
-    style: {},
-  },
   // TBD if this is a good idea but the intent was to map out the colors in a defined way that is inline with our color scale but doesn't have direct application to date
   colors: {
     grey: {
@@ -63,15 +51,6 @@ const globalTheme: DefaultTheme = {
       secondary: colors.colorName,
       tertiary: colors.colorName,
     },
-    // I don't like this yet because there a various properties changing for each. Disabled, active, focus and hover all have a different background color, foreground (text) color, border color, weights or what have you for all interactive elements like links, inputs, buttons
-    interactive: {
-      // Current
-      disabled: colors.colorName,
-      active: colors.colorName,
-      focus: colors.colorName,
-      hover: colors.colorName,
-      // Suggestion is outside of palette, broken out in a potentially one of the ways below
-    },
     loyalty: {
       primary: colors.colorName,
       background: colors.colorName,
@@ -100,6 +79,7 @@ const globalTheme: DefaultTheme = {
       warningBold: colors.colorName, // Background and border for default and light version
       warningSubtle: colors.colorName, // Light Background
     },
+    // This is on the edge of "breaking the rule" of being too specific to implementation
     text: {
       primary: colors.colorName,
       secondary: colors.colorName,
@@ -108,7 +88,7 @@ const globalTheme: DefaultTheme = {
       primaryInverted: colors.colorName,
       secondaryInverted: colors.colorName,
       tertiaryInverted: colors.colorName,
-    }
+    },
   },
   // Defines basic shapes of the bounding box of DOM nodes. Right now its just all around border radius but it could evolve to have only 2 or 3 corners for tooltips, clipping masks, tabs, artifacts, etc.
   shape: {
@@ -177,7 +157,7 @@ const globalTheme: DefaultTheme = {
       display: sizes.letterSpacing,
     },
   },
-  // Suggested approach for generic elements that have specific designation but 
+  // Potential suggested approach for generic/native elements that have specific designation but this still is on the edge of being too specific to implementation concepts. This should stop at native DOM elements and not extend into full out implementation or composition of a interactive component like a menu button or a drop down menu or a date picker or a search filter. Each one of those examples uses a bunch of smaller ideas to make up the end result. This needs feedback from the group
   interactive: {
     links: {
       primary: {
@@ -185,7 +165,7 @@ const globalTheme: DefaultTheme = {
         outline: "1px solid grey",
         disabled: {
           color: colors.colorName,
-          cursor: "not-allowed"
+          cursor: "not-allowed",
         },
         active: {
           color: colors.colorName,
@@ -196,19 +176,36 @@ const globalTheme: DefaultTheme = {
         },
         hover: {
           color: colors.colorName,
-          textDecoration: "none"
-        }
+          textDecoration: "none",
+        },
       },
       secondary: {
         // secondary things
       },
     },
     inputs: {
-
-    }
+      // TBD if this is good idea or not
+    },
     buttons: {
-      color: colors.colorName
-    }
+      // TBD if this is good idea or not
+    },
+  },
+  // Similar to above cause idk if this concepts is a good one but im leaning towards NO because this goes against the concept i tried to apply to the pallettes object
+  borders: {
+    color: {
+      container: colors.colorName,
+      input: colors.colorName,
+      button: colors.colorName,
+      active: colors.colorName,
+      containerInverted: colors.colorName,
+      inputInverted: colors.colorName,
+      buttonInverted: colors.colorName,
+      activeInverted: colors.colorName,
+    },
+    // Used to define variant border widths (probably remove this for now)
+    size: {},
+    // Used to define variant border styles like dashed, solid, dotted, inset, outset, etc (probably remove this for now)
+    style: {},
   },
 };
 
