@@ -6,7 +6,7 @@
 // - When creating sizes that have numerical values that are not on a incremental scale (2, 4, 6, 8, 10, 12 = increments of 2) use t-shirt starting at xs and ending at xl while anything passed that should be a multiplication of the smallest size (xs). For example is the xs sizes is 2 pixels and xl is 16 pixels, once you need more sizes and say theres a sizes that is 48 pixels being represented in the design it would be the 48 pixels divided by the 2 pixels and would give you the labels as x24 or 24 times the smallest size.
 // - When dealing with values represented as a scale in Figma, like increments of 100, use a numbered scale to replicate the ideas in the design.
 // - Try to match the verbiage as it is found in Figma to help maintain a consistent dialogue between all parties
-// - TBD
+// - TBD i hope this is a easy way to get feedback
 
 import { DefaultTheme } from "styled-components";
 import { colors, sizes } from "../index";
