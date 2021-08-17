@@ -100,24 +100,23 @@ const globalTheme: DefaultTheme = {
     fontSize: {
       h1: {
         fontSize: sizes.number,
-        lineHeight: sizes.number
+        lineHeight: sizes.number,
       },
       h2: {
         fontSize: sizes.number,
-        lineHeight: sizes.number
+        lineHeight: sizes.number,
       },
       h3: {
         fontSize: sizes.number,
-        lineHeight: sizes.number
+        lineHeight: sizes.number,
       },
       h4: {
         fontSize: sizes.number,
-        lineHeight: sizes.number
+        lineHeight: sizes.number,
       },
       h5: {
         fontSize: sizes.number,
-        lineHeight: sizes.number
-      }
+        lineHeight: sizes.number,
       },
       // IDK if this is necessary but this would be the font weight for both the "display" type and h1, h2, h3, etc
       heading: {
@@ -128,31 +127,31 @@ const globalTheme: DefaultTheme = {
         md: {
           fontSize: sizes.number,
           lineHeight: sizes.number,
-          letterSpacing: sizes.number
+          letterSpacing: sizes.number,
         },
         lg: {
           fontSize: sizes.number,
           lineHeight: sizes.number,
-          letterSpacing: sizes.number
-        }
+          letterSpacing: sizes.number,
+        },
       },
-      // This is from Figma but idk if we'll get the same arguments here for the headings as in theory this should be a p tag but its usage and semantics sound be out of sync cause body copy could be used in various places like a span tag, small tag, label tag, caption tag, dt, dd tag, table elements, etc. 
+      // This is from Figma but idk if we'll get the same arguments here for the headings as in theory this should be a p tag but its usage and semantics sound be out of sync cause body copy could be used in various places like a span tag, small tag, label tag, caption tag, dt, dd tag, table elements, etc.
       body: {
         sm: {
           fontSize: sizes.number,
-          lineHeight: sizes.number
+          lineHeight: sizes.number,
         },
         md: {
           fontSize: sizes.number,
-          lineHeight: sizes.number
+          lineHeight: sizes.number,
         },
         lg: {
           fontSize: sizes.number,
-          lineHeight: sizes.number
+          lineHeight: sizes.number,
         },
-      }
-    }
-  }
+      },
+    },
+  },
 };
 
 export { globalTheme };
