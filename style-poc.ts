@@ -98,34 +98,61 @@ const globalTheme: DefaultTheme = {
   typography: {
     // Sizes as stand alone cause not all HTML elements have different font styling attributes. i.e. all weights are the same for headings and body copy
     fontSize: {
-      display: {
-        md: sizes.fontSize,
-        lg: sizes.fontSize,
+      h1: {
+        fontSize: sizes.number,
+        lineHeight: sizes.number
       },
-      // Heading and sizes instead of h1, h2, h3, h4, h5, h6 because that should be determined upon implementation and semantics shouldn't be decided at this level
+      h2: {
+        fontSize: sizes.number,
+        lineHeight: sizes.number
+      },
+      h3: {
+        fontSize: sizes.number,
+        lineHeight: sizes.number
+      },
+      h4: {
+        fontSize: sizes.number,
+        lineHeight: sizes.number
+      },
+      h5: {
+        fontSize: sizes.number,
+        lineHeight: sizes.number
+      }
+      },
+      // IDK if this is necessary but this would be the font weight for both the "display" type and h1, h2, h3, etc
       heading: {
-        xs: sizes.fontSize,
-        sm: sizes.fontSize,
-        md: sizes.fontSize,
-        lg: sizes.fontSize,
+        fontWeight: sizes.number,
       },
+      // This is from Figma and extends past a h1 so idk what to do here
+      display: {
+        md: {
+          fontSize: sizes.number,
+          lineHeight: sizes.number,
+          letterSpacing: sizes.number
+        },
+        lg: {
+          fontSize: sizes.number,
+          lineHeight: sizes.number,
+          letterSpacing: sizes.number
+        }
+      },
+      // This is from Figma but idk if we'll get the same arguments here for the headings as in theory this should be a p tag but its usage and semantics sound be out of sync cause body copy could be used in various places like a span tag, small tag, label tag, caption tag, dt, dd tag, table elements, etc. 
       body: {
-        sm: sizes.fontSize,
-        md: sizes.fontSize,
-        lg: sizes.fontSize,
-      },
-      metric: sizes.fontSize,
-      link: sizes.fontSize,
-    },
-    fontWeight: {
-      display: sizes.fontWeight,
-      heading: sizes.fontWeight,
-      body: sizes.fontWeight,
-    },
-    letterSpacing: {
-      display: sizes.letterSpacing,
-    },
-  },
+        sm: {
+          fontSize: sizes.number,
+          lineHeight: sizes.number
+        },
+        md: {
+          fontSize: sizes.number,
+          lineHeight: sizes.number
+        },
+        lg: {
+          fontSize: sizes.number,
+          lineHeight: sizes.number
+        },
+      }
+    }
+  }
 };
 
 export { globalTheme };
