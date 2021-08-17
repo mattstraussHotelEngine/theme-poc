@@ -118,10 +118,6 @@ const globalTheme: DefaultTheme = {
         fontSize: sizes.number,
         lineHeight: sizes.number,
       },
-      // IDK if this is necessary but this would be the font weight for both the "display" type and h1, h2, h3, etc
-      heading: {
-        fontWeight: sizes.number,
-      },
       // This is from Figma and extends past a h1 so idk what to do here
       display: {
         md: {
