@@ -13,20 +13,20 @@ export const colors = {
   retroBlue: "#2F58EB", // Core Brand - Blue
   /** Value: #6d8af1 */
   softBlue: "#6d8af1", // Core Brand - Blue Faded
-  /** Value: #1A1A1A */
-  errieBlack: "#1A1A1A", // Primary Content
+  /** Value: #1A1A1A (FIND AND REPLACE - grey[800]) */
+  errieBlack: "#1A1A1A", // Primary Content (FIND AND REPLACE - grey[800])
   /** Value: #414243 */
   blackPanther: "#414243", // Secondary Content - Grey
   /** Value: #929395 */
   kiwiGrey: "#929395", // Tertiary Content - Grey
   /** Value: #BDBEC1 */
   piedWagtailGrey: "#BDBEC1", // Icon/Action - Grey
-  /** Value: #DDDEE0 */
-  azureHint: "#DDDEE0", // Borders - Grey
-  /** Value: #E7E8EC */
-  purpleCrystal: "#E7E8EC", // Dividers - Grey
-  /** Value: #F3F4F7 */
-  chefsHat: "#F3F4F7", // Background - Grey
+  /** Value: #DDDEE0 (FIND AND REPLACE - grey[200]) */
+  azureHint: "#DDDEE0", // Borders - Grey (FIND AND REPLACE - grey[200])
+  /** Value: #E7E8EC (FIND AND REPLACE - grey[100]) */
+  purpleCrystal: "#E7E8EC", // Dividers - Grey (FIND AND REPLACE - grey[200]) */
+  /** Value: #F3F4F7 (FIND AND REPLACE - grey[50]) */
+  chefsHat: "#F3F4F7", // Background - Grey  (FIND AND REPLACE - grey[50])
   /** Value: #008805 */
   finePine: "#008805", // Success - Green
   /** Value: #F2F9F2 */
@@ -43,12 +43,12 @@ export const colors = {
   placeboBlue: "#EDF3FC", // Highlight - Background - Blue
   /** Value: #95A0AA */
   frilledShark: "#95A0AA", // Rewards - Silver - Grey
-  /** Value: #F5C25C */
-  butterfield: "#F5C25C", // Rewards - Gold - Yellow
-  /** Value: #6E7E8E */
-  chainGangGrey: "#6E7E8E", // Rewards - Platinum - Grey
-  /** Value: #F8892F */
-  brightMango: "#F8892F", // Rewards - VIP - Orange
+  /** Value: #F5C25C (FIND AND REPLACE - gold[400]) */
+  butterfield: "#F5C25C", // Rewards - Gold - Yellow (FIND AND REPLACE - gold[400])
+  /** Value: #6E7E8E (FIND AND REPLACE - slate[400]) */
+  chainGangGrey: "#6E7E8E", // Rewards - Platinum - Grey (FIND AND REPLACE - gold[400])*/
+  /** Value: #F8892F (FIND AND REPLACE - orange[400]) */
+  brightMango: "#F8892F", // Rewards - VIP - Orange (FIND AND REPLACE - orange[400]) */
   /** Value: #6243BC */
   dragonlordPurple: "#6243BC", // Loyalty - Primary - Purple
   /** Value: #EFECF8 */
@@ -113,8 +113,8 @@ export const colors = {
   lightShadow: "rgba(0, 0, 0, 0.12)", // Button Shadow - Top
   /** Value: rgba(0, 0, 0, 0.04) */
   darkShadow: "rgba(0, 0, 0, 0.04)", // Button Shadow - Bottom
-  /** Value: #268346 */
-  richGreen: `#268346`, // Dashboard Trends Green
+  /** Value: #268346 (FIND AND REPLACE - green[600]) */
+  richGreen: `#268346`, // Dashboard Trends Green (FIND AND REPLACE - green[600])
   /** Value: #EAEBEE */
   lavendarWisp: `#EAEBEE`, // Dashboard Billing Progress Background
   /** Value: #430CF3 */
