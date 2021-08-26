@@ -268,21 +268,21 @@ export const colors = {
     700: "#1E0066",
   },
   slate: {
-    /** Value: */
+    /** Value: #ECF1F6*/
     50: "#ECF1F6",
-    /** Value: */
+    /** Value: #D1DBE7*/
     100: "#D1DBE7",
-    /** Value: */
+    /** Value: #A7BACC */
     200: "#A7BACC",
-    /** Value: */
+    /** Value: #8FA1B4 */
     300: "#8FA1B4",
-    /** Value: */
+    /** Value: #6E7E8E */
     400: "#6E7E8E",
-    /** Value: */
+    /** Value: #586572 */
     500: "#586572",
-    /** Value: */
+    /** Value: #424C55 */
     600: "#424C55",
-    /** Value: */
+    /** Value: #2C3239 */
     700: "#2C3239",
   },
   grey: {
