@@ -10,55 +10,32 @@ const globalTheme = {
     4: `0px 8px 24px 1px ${colors.lightShadow}, 0px 1px 4px ${colors.darkShadow}`, // Use for: Modals
   },
   fontSize: {
-    /** Value: 12px */
     xs: "12px",
-    /** Value: 14px */
     sm: "14px",
-    /** Value: 16px */
     md: "16px",
-    /** Value: 20px */
     lg: "20px",
-    /** Value: 24px */
     xl: "24px",
-    /** Value: 36px */
     x3: "36px", // Smallest value (12) times 3
-    /** Value: 72px */
     x6: "72px", // Smallest value (12) times 6
   },
   fontWeight: {
-    /** Value: 100 */
     thin: "100", // Thin (Hairline)
-    /** Value: 200 */
     extraLight: "200", // Extra Light (Ultra Light)
-    /** Value: 300 */
     light: "300", // Light
-    /** Value: 400 */
     normal: "400", // Normal (Regular)
-    /** Value: 500 */
     medium: "500", // Medium
-    /** Value: 600 */
     semiBold: "600", // Semi Bold (Demi Bold)
-    /** Value: 700 */
     bold: "700", // Bold
-    /** Value: 800 */
     extraBold: "800", // Extra Bold (Ultra Bold)
-    /** Value: 900 */
     black: "900", // Black (Heavy)
-    /** Value: 950 */
     extraBlack: "950", // Extra Black (Ultra Black)
   },
   lineHeight: {
-    /** Value: 16px */
     xs: "16px",
-    /** Value: 20px */
     sm: "20px",
-    /** Value: 24px */
     md: "24px",
-    /** Value: 28px */
     lg: "28px",
-    /** Value: 46px */
     xl: "46px",
-    /** Value: 80px */
     x5: "80px", // Smallest value (16) times 5
   },
   palettes: {
@@ -229,6 +206,6 @@ const globalTheme = {
     },
   },
   space: (n) => `${n * 8}px`,
-};
+} as const;
 
 export { globalTheme };
